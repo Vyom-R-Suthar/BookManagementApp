@@ -1,0 +1,78 @@
+<!-- Jai Swaminarayan KESHAV , Swami-Shreeji -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #fcontainer{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #formContainer{
+            border: 2px solid white;
+            /*margin-left: 550px;
+            margin-top : 150px;*/
+            text-align: center;
+            width: 370px;
+            height: 450px;
+        }
+        .field{
+            width: 100%;
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .fieldTitles{
+        	color : white;
+        }
+        .buttons{
+        background-color: aquamarine;
+        border: 1px solid white;
+        border-radius: 5px;
+        height: 30px;
+        cursor:pointer;
+    	}
+    	.buttons:hover{
+    	background-color : black;
+    	color : aquamarine;
+    	border : 1px solid aquamarine;
+    }
+    	.values{
+    		opacity : 0.7;
+    	}
+    	body{
+    	background-size:cover;
+    }
+    </style>
+</head>
+<body background="book1.jpg"  bgproperties="fixed">
+    <div id="fcontainer">
+    <div id="formContainer">
+        <h1 style="color:white;">Insert Book data </h1>
+        <form action="InsertServlet" method="post">
+            <div class="field">
+            <p class="fieldTitles">Book Title  :</p> <input class="values" type="text" name="bookTitle"><br>
+            </div>
+            <div class="field">
+            <p class="fieldTitles">Book Author : </p><input class="values" type="text" name="bookAuthor"><br>
+            </div>
+            <div class="field">
+            <p class="fieldTitles">Publisher   :</p> <input class="values" type="text" name="bookPublisher"><br>
+            </div>
+            <div class="field">
+            <p class="fieldTitles">Book price  :</p> <input class="values" type="text" name="bookPrice"><br>
+            </div>
+            <div class="field">
+            <input class="buttons" style="margin-top: 20px;margin-right:10px;" type="submit" value="Insert"> <input class="buttons" type="reset">
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

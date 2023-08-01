@@ -1,0 +1,72 @@
+<!-- Jai Swaminarayan KESHAV , Swami-Shreeji -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #fcontainer{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #formContainer{
+            border: 2px solid white;
+            /*margin-top : 200px; 
+            margin-left: 550px;*/
+            text-align: center;
+            width: 400px;
+            height: 270px;
+        }
+        .field{
+            width: 100%;
+            text-align: center;
+            margin: 10px;
+        }
+        .fieldTitles{
+        	color : white ;
+        }
+        .values{
+        	opacity : 0.7;
+        }
+        .buttons{
+        background-color: aquamarine;
+        border: 1px solid white;
+        border-radius: 5px;
+        height: 30px;
+        cursor:pointer;
+    	}
+    	.buttons:hover{
+    	background-color : black;
+    	color : aquamarine;
+    	border : 1px solid aquamarine;
+    }
+    body{
+    	background-size:cover;
+    }
+    </style>
+</head>
+<body background="book1.jpg" bgproperties="fixed">
+    <div id="fcontainer">
+    <div id="formContainer">
+        <h2 style="color:white;">Update Book data </h2>
+        <form action="UpdateServlet" method="post">
+            <div class="field">
+            <p class="fieldTitles">Book Title  : </p><input class="values" type="text" name="bookTitle"><br>
+            </div>
+        
+            <div class="field">
+            <p class="fieldTitles">Book price  : </p><input class="values" type="text" name="bookPrice"><br>
+            </div>
+            <div class="field">
+            <input class="buttons" style="margin-top: 20px;margin-right:10px;" type="submit" value="Update"><input class="buttons" type="reset">
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

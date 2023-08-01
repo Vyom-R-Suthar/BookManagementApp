@@ -1,0 +1,116 @@
+<!-- Jai Swaminarayan KESHAV , Swami-Shreeji -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+	#bookcontainer{
+		border : 2px solid white;
+		/*margin-left : 550px;*/
+		width : 30%;
+		/*margin-top : 200px;*/
+        height: 25%;
+    }
+	
+	#title{
+        /*margin-left: 80px;*/
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+	}
+    #options{
+        /*margin-left: 100px;
+        margin-bottom: 20px;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+    .buttons{
+        background-color: aquamarine;
+        border: 1px solid white;
+        border-radius: 5px;
+        height: 30px;
+        margin-right: 10px;
+        width: 50px;
+        cursor:pointer;
+    }
+	.buttons:hover{
+    	background-color : black;
+    	color : aquamarine;
+    	border : 1px solid aquamarine;
+    }
+    .fcontainer{
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 1px solid white;
+    }
+    body{
+        background-image: url("book1.jpg");
+        background-size:cover;
+    }
+    .bookManagement{
+        font-size: 200%;
+        font-weight: bolder;
+    }
+    @media (min-width:650px) and (max-width:850px){
+        .bookManagement{
+            font-size: 160%;
+        }
+    }
+    @media (min-width:550px) and (max-width:650px){
+        .bookManagement{
+            font-size: 130%;
+        }
+    }
+    @media (max-width:550px){
+        .bookManagement{
+            font-size: 100%;
+        }
+    }
+    @media(max-width:800px){
+        #options{
+            flex-direction: column;
+        }
+        #bookcontainer{
+            height: 40%;
+        }
+        .buttons{
+            margin-bottom: 5px;
+            width: 100px;
+        }
+    }
+    @media(max-width:400px){
+        .buttons{
+            width: 70px;
+        }
+    }
+</style>
+</head>
+<body background="book1.jpg"  bgproperties="fixed">
+    <div class="fcontainer">
+	<div id="bookcontainer">
+		<div id="title">
+		<p class="bookManagement" style="color:white;">Book Management</p><br>
+		</div>
+		<div id="options">
+		<a href="insert.html"><button class="buttons">Insert</button></a>
+		<a href="update.html"><button class="buttons">Update</button></a>
+		<a href="delete.html"><button class="buttons">Delete</button></a>
+		<a href="ListServlet"><button class="buttons">List</button></a>
+		</div>
+	</div>
+    </div>
+</body>
+</html>
