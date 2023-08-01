@@ -1,4 +1,5 @@
 // Jai Swaminarayan KESHAV , Swami-Shreeji
+// This is a Book bean
 package com.book.manage;
 
 public class Book {
